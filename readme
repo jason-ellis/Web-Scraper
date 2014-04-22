@@ -8,13 +8,13 @@
  *
  * All CSV files are separated by line breaks, one value per line, no quotes.
  * url.csv file is used to obfuscate site I'm searching for privacy reasons.
- * identifier.csv and idNames are required because sites are formatted as:
+ * input.csv and idNames are required because sites are formatted as:
  * https://xxx.xxx.com/_unique_id_/yyyy
  *
  * Required files:
  * url.csv - The URL to scan. For intended purpose, this app uses a URL on line 1, appends
  *      the path from identifier.csv, and then (optionally) appends the 2nd line from url.csv.
- * identifier.csv - List of identifiers/paths concatenated to URL in url.csv.
+ * input.csv - List of identifiers/paths concatenated to URL in url.csv.
  * checklist.csv - List of strings to search for and return PASS if they are not present,
  *      FAIL if they are present.
  * output.csv - Results of scraping are printed to this file
